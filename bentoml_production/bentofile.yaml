@@ -1,0 +1,21 @@
+service: "service.py:svc"  # Same as the argument passed to `bentoml serve`
+labels:
+    owner: bentoml-team
+    stage: dev
+include:
+- "*.py"  # A pattern for matching which files to include in the bento
+python:
+    packages:  # Additional pip packages required by the service
+    - scikit-learn==1.0.2 
+    - numpy
+    - pandas
+    - pydantic
+    - xgboost
+
+
+#once we have bentofile.yaml and service.py, our model is production ready!
+#we do bentoml build..
+
+#after creating this file, cd bentoml - bentos - "credit_risk_classifier" - choose the latest tag or any tag you need - tree (generate structure)
+
+#create docker image afterwards, bentoml containerize credit_risk_classifier:tag
