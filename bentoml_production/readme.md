@@ -16,3 +16,11 @@ Build docker image
   docker run -it --rm -p 3000:3000 credit_risk_classifier:n5h22gsrtc46hym3 serve --production
 ```
 - I faced unpickling error, had to specify scikit-learn==1.0.2 in bentofile.yaml
+
+### Validating Performance
+
+- Run locustfile.py using 
+```bash
+  locust -H http://localhost:3000
+```
+- Test your model's performance by generating webtraffic using locust web ui
