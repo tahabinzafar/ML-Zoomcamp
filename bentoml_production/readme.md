@@ -9,10 +9,10 @@
 
 Build docker image
 ```bash
-  bentoml containerize <classifer:tag>
+  bentoml containerize credit_risk_classifer:tag
 ```
 - Then you can run the image using
 ```bash
-  docker run <classifier:tag>
+  docker run -it --rm -p 3000:3000 credit_risk_classifier:n5h22gsrtc46hym3 serve --production
 ```
 - I faced unpickling error, had to specify scikit-learn==1.0.2 in bentofile.yaml
