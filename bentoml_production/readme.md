@@ -13,7 +13,7 @@ Build docker image
 ```
 - Then you can run the image using
 ```bash
-  docker run -it --rm -p 3000:3000 credit_risk_classifier:n5h22gsrtc46hym3 serve --production
+  docker run -it --rm -p 3000:3000 credit_risk_classifier:tag serve --production
 ```
 - I faced unpickling error, had to specify scikit-learn==1.0.2 in bentofile.yaml
 
