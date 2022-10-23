@@ -11,5 +11,6 @@
 ```bash
   locust -H http://localhost:3000
  ```
+ - Switch between model1 and model2 tags by changing in service.py
   
   
