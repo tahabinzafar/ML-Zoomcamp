@@ -54,8 +54,7 @@ More details about range of values and data types of each input field is discuss
 ```bash
   bentoml build
 ```
-- It will create local bentoml folder containing all dependencies needed to create docker image
-
+It will create local bentoml folder containing all dependencies needed to create docker image
 - Build docker image
 ```bash
   bentoml containerize employee_churn_classifer:tag
