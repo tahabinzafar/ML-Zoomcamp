@@ -42,6 +42,7 @@ Project contains EDA and model implementation of HR data of an organization. Mai
   "employee_work_load": "unburdened"
 }
 ```
+More details about range of values and data types of each input field is discussed briefly in the "test_sample.ipynb" notebook.
 
 ### Run web service using Docker
 
