@@ -54,7 +54,7 @@ More details about range of values and data types of each input field is discuss
 ```bash
   bentoml build
 ```
-(Note down the <tag> specified to the image as you would need that to containerize your service)
+(Note down the "<tag>" specified to the image as you would need that to containerize your service)
   
 - Build docker image
 ```bash
