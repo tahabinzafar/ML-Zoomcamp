@@ -38,15 +38,15 @@ async def classify(churn_application):
     vector = dv.transform(application_data)
     prediction = await model_runner.predict_proba.async_run(vector)
     #prediction = model_runner.predict.run(vector)
-    result = prediction[0]
-
+    result=prediction[:,1]
+    
     if result >= 0.5:
 
         return {
             "Churn": "Very Likely to Churn (High Risk)",
             "result": result
         }
-    elif result < 0.5 and result >= 0.25:
+    elif result >= 0.25:
         return {
             "status": "Less Risk of Churn (Cautious)",
             "result": result
