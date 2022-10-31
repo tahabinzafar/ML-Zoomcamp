@@ -54,13 +54,15 @@ More details about range of values and data types of each input field is discuss
 ```bash
   bentoml build
 ```
+(Note down the <tag> specified to the image as you would need that to containerize your service)
+  
 - Build docker image
 ```bash
-  bentoml containerize employee_churn_classifer:tag
+  bentoml containerize employee_churn_classifer:<tag>
 ```
 - Then you can run the image using
 ```bash
-  docker run -it --rm -p 3000:3000 employee_churn_classifier:tag serve --production
+  docker run -it --rm -p 3000:3000 employee_churn_classifier:<tag> serve --production
 ```
 - Run following command to see description about image created. Size of image is around 884MB
 ```bash
