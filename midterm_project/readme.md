@@ -21,7 +21,7 @@ Project contains EDA and model implementation of HR data of an organization. Mai
 ```bash
   pipenv shell
 ```
-- Then run following command in project directory
+- Then run following command
 ```bash
   bentoml serve service.py:svc --production --reload
 ```
@@ -42,7 +42,7 @@ Project contains EDA and model implementation of HR data of an organization. Mai
   "employee_work_load": "unburdened" 
 }
 ```
-More details about range of values and data types of each input field is discussed briefly in the "test_sample.ipynb" notebook. Please refer to it for more clarity
+More details about range of values and data types for each input field is discussed briefly in the "test_sample.ipynb" notebook. Please refer to it for more clarity
 
 ## Run web service using Docker
 
