@@ -4,7 +4,7 @@ Project contains EDA and model implementation of HR data of an organization. Mai
 
 ### For EDA; notebook.ipynb
 
-- Please go through the analysis in the notebook to understand the data through visual and numerical data analysis
+- Please go through the analysis in the notebook.ipynb to understand the data through visual and numerical data analysis.
 
 ### Run train.py script (IMPORTANT!!)
 
