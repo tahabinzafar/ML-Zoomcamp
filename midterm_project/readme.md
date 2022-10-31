@@ -27,7 +27,7 @@ Project contains EDA and model implementation of HR data of an organization. Mai
 ```
 - Make sure to pass input in format mentioned in "test_sample.ipynb" notebook or else an error would be generated
 
-### Run web service using a container
+### Run web service using Docker
 
 - Activate the virtual environment in project directory, using
 ```bash
