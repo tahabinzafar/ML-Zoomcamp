@@ -1,12 +1,12 @@
-## Midterm Project
+# Midterm Project
 
 Project contains EDA and model implementation of HR data of an organization. Main goal is to study the churn behaviour and make a predictive model that generates churn probabilities of any employee record sent to it in format discussed in "test_sample.ipynb" notebook.
 
-### For EDA; notebook.ipynb
+## For EDA; notebook.ipynb
 
 - Please go through the analysis in the notebook.ipynb to understand the data through visual and numerical data analysis.
 
-### Run train.py script (IMPORTANT!!)
+## Run train.py script (IMPORTANT!!)
 
 - Run train.py script, it will save the model locally, you will get the output of last cell as follows;
 
@@ -15,7 +15,7 @@ Project contains EDA and model implementation of HR data of an organization. Mai
 (Note that tag specified with model name would be different everytime, hence we have used "employee_churn_model:latest" to get latest tag in service.py)
 
 
-### Run web service locally
+## Run web service locally
 
 - Activate the virtual environment in project directory, using
 ```bash
@@ -44,7 +44,7 @@ Project contains EDA and model implementation of HR data of an organization. Mai
 ```
 More details about range of values and data types of each input field is discussed briefly in the "test_sample.ipynb" notebook. Please refer to it for more clarity
 
-### Run web service using Docker
+## Run web service using Docker
 
 - Activate the virtual environment in project directory, using
 ```bash
@@ -71,18 +71,18 @@ More details about range of values and data types of each input field is discuss
 - Make sure to pass input in format mentioned in "test_sample.ipynb" notebook or else an error would be generated
 
 
-### Important Note 
+## Important Note 
 
 - I faced unpickling error, had to specify scikit-learn==1.0.2 in bentofile.yaml
 
 
-### Screenshots
+## Screenshots
 
-Not Churn
+### Not Churn output
 
 [![not-churn.png](https://i.postimg.cc/9FdvGgzd/not-churn.png)](https://postimg.cc/VdNGwRqv)
 
-Churn
+### Churn output
 
 [![churn.png](https://i.postimg.cc/x17yqnYt/churn.png)](https://postimg.cc/jDHJFVD7)
 
