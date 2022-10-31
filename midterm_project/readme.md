@@ -39,7 +39,8 @@ Project contains EDA and model implementation of HR data of an organization. Mai
   "dept": "sales", #str (Please see test_samples for range of departments initials)
   "salary": "low", #str (low,medium or high)
   "satisfaction_category": "low", #str (set it to "low" if satisfaction level < 0.5, or "high" if > = 0.5)
-  "employee_work_load": "unburdened" #str ("unburdened": projects = 2, "ideal": projects=3,4 or 5, "overburdened": projects=6,7 or more)
+  "employee_work_load": "unburdened" 
+  #str ("unburdened": projects = 2, "ideal": projects=3,4 or 5, "overburdened": projects=6,7 or more)
 }
 ```
 More details about range of values and data types of each input field is discussed briefly in the "test_sample.ipynb" notebook. Please refer to it for more clarity
