@@ -34,9 +34,29 @@ Project contains EDA and model implementation of HR data of an organization. Mai
 ```bash
   docker run -it --rm -p 3000:3000 employee_churn_classifier:tag serve --production
 ```
+- Run following command to see description about image created. Size of image is around 884MB
+```bash
+  docker images
+```
+- Make sure to pass input in format mentioned in "test_sample.ipynb" notebook or else an error would be generated
+
+
+### Important Note 
+
 - I faced unpickling error, had to specify scikit-learn==1.0.2 in bentofile.yaml
 
-- Make sure to pass input in format mentioned in "test_sample.ipynb" notebook or else an error would be generated
+
+### Screenshots
+
+Not Churn
+
+[![not-churn.png](https://i.postimg.cc/9FdvGgzd/not-churn.png)](https://postimg.cc/VdNGwRqv)
+
+Churn
+
+[![churn.png](https://i.postimg.cc/x17yqnYt/churn.png)](https://postimg.cc/jDHJFVD7)
+
+
 
 
 
