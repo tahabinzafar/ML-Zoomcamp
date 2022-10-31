@@ -64,7 +64,7 @@ More details about range of values and data types of each input field is discuss
 ```bash
   docker run -it --rm -p 3000:3000 employee_churn_classifier:<tag> serve --production
 ```
-- Run following command to see description about image created. Size of image is around 884MB
+- Run following command to see description about image created. Size of image in my environment is 884MB
 ```bash
   docker images
 ```
