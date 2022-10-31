@@ -16,7 +16,11 @@ Project contains EDA and model implementation of HR data of an organization. Mai
 
 ### Run web service using a container
 
-- - After installing libraries locally run
+- Activate the virtual environment in project directory, using
+```bash
+  pipenv shell
+```
+- After all libraries installed run
 ```bash
   bentoml build
 ```

@@ -7,7 +7,7 @@
 ```
 - It will create local bentoml folder containing all dependencies required to create docker image
 
-Build docker image
+- Build docker image
 ```bash
   bentoml containerize credit_risk_classifer:tag
 ```
