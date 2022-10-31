@@ -2,6 +2,17 @@
 
 Project contains EDA and model implementation of HR data of an organization. Main goal is to study the churn behaviour and make a predictive model that generates churn probabilities of any employee record sent to it in format discussed in "test_sample.ipynb" notebook. 
 
+### For EDA; notebook.ipynb
+
+- Please go through the analysis in the notebook to understand the data through visual and numerical data analysis
+
+### train.py
+
+- Run train.py script, it will save the model locally in your home directory
+"Model(tag="employee_churn_model:gvpuglsym6okp7ir", path="/home/user/bentoml/models/employee_churn_model/gvpuglsym6okp7ir/")"
+(Please note that tag specified with model name would be different everytime, hence we have used "employee_churn_model:latest" to get latest tag in service.py)
+
+
 ### Run web service locally
 
 - Activate the virtual environment in project directory, using
