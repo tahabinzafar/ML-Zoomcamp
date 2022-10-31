@@ -29,15 +29,12 @@ svc = bentoml.Service("employee_churn_classifier", runners=[model_runner])
 
 @svc.api(input=JSON(pydantic_model=ChurnApplication), output=JSON())
 
-#now we receive ChurnApplication in classify
 
 async def classify(churn_application):
-#def classify(churn_application):
 
     application_data=churn_application.dict()
     vector = dv.transform(application_data)
     prediction = await model_runner.predict_proba.async_run(vector)
-    #prediction = model_runner.predict.run(vector)
     result=prediction[:,1]
     
     if result >= 0.5:

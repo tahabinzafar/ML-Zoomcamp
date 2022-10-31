@@ -1,6 +1,6 @@
 ## Midterm Project
 
-Project contains EDA and model implementation of HR data of an organization. Main goal is to study the churn behaviour and make a predictive model that generates churn probabilities of any employee record sent to it in format discussed in "test_sample.ipynb" notebook. 
+Project contains EDA and model implementation of HR data of an organization. Main goal is to study the churn behaviour and make a predictive model that generates churn probabilities of any employee record sent to it in format discussed in "test_sample.ipynb" notebook.
 
 ### For EDA; notebook.ipynb
 
@@ -8,11 +8,11 @@ Project contains EDA and model implementation of HR data of an organization. Mai
 
 ### Run train.py script (IMPORTANT!!)
 
-- Run train.py script, it will save the model locally in your home directory;
+- Run train.py script, it will save the model locally, you will get the output of last cell as follows;
 
 "Model(tag="employee_churn_model:gvpuglsym6okp7ir", path="/home/user/bentoml/models/employee_churn_model/gvpuglsym6okp7ir/")"
 
-(Please note that tag specified with model name would be different everytime, hence we have used "employee_churn_model:latest" to get latest tag in service.py)
+(Note that tag specified with model name would be different everytime, hence we have used "employee_churn_model:latest" to get latest tag in service.py)
 
 
 ### Run web service locally
@@ -25,7 +25,23 @@ Project contains EDA and model implementation of HR data of an organization. Mai
 ```bash
   bentoml serve service.py:svc --production --reload
 ```
-- Make sure to pass input in format mentioned in "test_sample.ipynb" notebook or else an error would be generated
+- Make sure to pass input in format mentioned in "test_sample.ipynb" notebook or else an error would be generated, example;
+
+```bash
+{
+  "satisfaction_level": 0.38,
+  "last_evaluation": 0.53,
+  "number_project": 2,
+  "average_montly_hours": 143,
+  "time_spend_company": 3,
+  "Work_accident": 0,
+  "promotion_last_5years": 0,
+  "dept": "sales",
+  "salary": "low",
+  "satisfaction_category": "low",
+  "employee_work_load": "unburdened"
+}
+```
 
 ### Run web service using Docker
 
