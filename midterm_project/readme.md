@@ -8,8 +8,10 @@ Project contains EDA and model implementation of HR data of an organization. Mai
 
 ### Run train.py script (IMPORTANT!!)
 
-- Run train.py script, it will save the model locally in your home directory
+- Run train.py script, it will save the model locally in your home directory;
+
 "Model(tag="employee_churn_model:gvpuglsym6okp7ir", path="/home/user/bentoml/models/employee_churn_model/gvpuglsym6okp7ir/")"
+
 (Please note that tag specified with model name would be different everytime, hence we have used "employee_churn_model:latest" to get latest tag in service.py)
 
 
