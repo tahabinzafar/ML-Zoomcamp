@@ -29,17 +29,17 @@ Project contains EDA and model implementation of HR data of an organization. Mai
 
 ```bash
 {
-  "satisfaction_level": 0.38,
-  "last_evaluation": 0.53,
-  "number_project": 2,
-  "average_montly_hours": 143,
-  "time_spend_company": 3,
-  "Work_accident": 0,
-  "promotion_last_5years": 0,
-  "dept": "sales",
-  "salary": "low",
-  "satisfaction_category": "low",
-  "employee_work_load": "unburdened"
+  "satisfaction_level": 0.38, #float (0-1)
+  "last_evaluation": 0.53, #float (0-1)
+  "number_project": 2, #int (trained on 2-7 projects)
+  "average_montly_hours": 143, #int (trained on 96 - 310 hours)
+  "time_spend_company": 3, #int (trained on 2 to 10 years)
+  "Work_accident": 0, #int (trained on 0:no or 1:yes)
+  "promotion_last_5years": 0, #int (trained on 0:no or 1:yes)
+  "dept": "sales", #str (Please see test_samples for range of departments initials)
+  "salary": "low", #str (low,medium or high)
+  "satisfaction_category": "low", #str (set it to "low" if satisfaction level < 0.5, or "high" if > = 0.5)
+  "employee_work_load": "unburdened" #str ("unburdened": projects = 2, "ideal": projects=3,4 or 5, "overburdened": projects=6,7 or more)
 }
 ```
 More details about range of values and data types of each input field is discussed briefly in the "test_sample.ipynb" notebook. Please refer to it for more clarity
