@@ -6,7 +6,7 @@ Project contains EDA and model implementation of HR data of an organization. Mai
 
 - Please go through the analysis in the notebook to understand the data through visual and numerical data analysis
 
-### train.py
+### Run train.py script (IMPORTANT!!)
 
 - Run train.py script, it will save the model locally in your home directory
 "Model(tag="employee_churn_model:gvpuglsym6okp7ir", path="/home/user/bentoml/models/employee_churn_model/gvpuglsym6okp7ir/")"
