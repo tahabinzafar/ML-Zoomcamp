@@ -1,6 +1,6 @@
 # Midterm Project
 
-Project contains EDA and model implementation of HR data of an organization. Main goal is to study the churn behaviour and make a predictive model that generates churn probabilities of any employee record sent to it in format discussed in "test_sample.ipynb" notebook.
+Project contains EDA and model implementation of HR data of an organization. Main goal is to study the churn behaviour and make a predictive model which generates churn probability of any employee record sent to it in format discussed in "test_sample.ipynb" notebook.
 
 ## For EDA; notebook.ipynb
 
@@ -21,7 +21,7 @@ Project contains EDA and model implementation of HR data of an organization. Mai
 ```bash
   pipenv shell
 ```
-- Then run following command in project directory
+- Then run following command
 ```bash
   bentoml serve service.py:svc --production --reload
 ```
@@ -42,7 +42,7 @@ Project contains EDA and model implementation of HR data of an organization. Mai
   "employee_work_load": "unburdened" 
 }
 ```
-More details about range of values and data types of each input field is discussed briefly in the "test_sample.ipynb" notebook. Please refer to it for more clarity
+More details about range of values and data types for each input field is discussed briefly in the "test_sample.ipynb" notebook. Please refer to it for more clarity
 
 ## Run web service using Docker
 
@@ -54,12 +54,11 @@ More details about range of values and data types of each input field is discuss
 ```bash
   bentoml build
 ```
-(Note down the "< tag >" specified to the image as you would need that to containerize your service)
-  
 - Build docker image
 ```bash
   bentoml containerize employee_churn_classifer:<tag>
 ```
+(Note down the "< tag >" specified to the image as you would need that to containerize your service)
 - Then you can run the image using
 ```bash
   docker run -it --rm -p 3000:3000 employee_churn_classifier:<tag> serve --production
