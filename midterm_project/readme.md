@@ -65,6 +65,8 @@ More details about range of values and data types for each input field is discus
 ```bash
   docker run -it --rm -p 3000:3000 employee_churn_classifier:<tag> serve --production
 ```
+(Successfully built docker image for "employee_churn_classifier:gl7lfwta2oee47lv")
+
 - Run following command to see description about image created. Size of image in my environment is 884MB
 ```bash
   docker images
