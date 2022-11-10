@@ -54,6 +54,8 @@ More details about range of values and data types for each input field is discus
 ```bash
   bentoml build
 ```
+(Successfully built Bento(tag="employee_churn_classifier:gl7lfwta2oee47lv"))
+
 - Build docker image
 ```bash
   bentoml containerize employee_churn_classifer:<tag>
