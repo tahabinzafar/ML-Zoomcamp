@@ -1,4 +1,4 @@
-# Midterm Project
+# Project
 
 Project contains EDA and model implementation of HR data of an organization. Main goal is to study the churn behaviour and make a predictive model which generates churn probability of any employee record sent to it in format discussed in "test_sample.ipynb" notebook.
 
